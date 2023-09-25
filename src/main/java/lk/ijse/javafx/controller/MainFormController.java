@@ -17,6 +17,10 @@ import java.io.IOException;
 public class MainFormController {
     public AnchorPane rootNode;
 
+    public void initialize() {
+        System.out.println("Main Form just loaded");
+    }
+
     public void btnCustomerOnAction(ActionEvent actionEvent) throws IOException {
         Parent rootNode = FXMLLoader.load(this.getClass().getResource("/view/customer_form.fxml"));
 

@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="394.0" prefWidth="344.0" style="-fx-background-color: #0000;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.javafx.controller.LoginFormController">
+<AnchorPane fx:id="root" prefHeight="394.0" prefWidth="344.0" style="-fx-background-color: #0000;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.javafx.controller.LoginFormController">
    <children>
       <Label layoutX="112.0" layoutY="26.0" text="Login Form">
          <font>

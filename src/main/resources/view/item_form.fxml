@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="378.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.javafx.controller.ItemFormController">
+<AnchorPane fx:id="root" prefHeight="378.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.javafx.controller.ItemFormController">
    <children>
       <Label layoutX="189.0" layoutY="20.0" prefHeight="40.0" prefWidth="187.0" text="Item Form" textFill="#010302">
          <font>
@@ -18,14 +21,6 @@
       <TextField layoutX="325.0" layoutY="107.0" prefHeight="34.0" prefWidth="222.0" promptText="Description" />
       <TextField layoutX="33.0" layoutY="183.0" prefHeight="34.0" prefWidth="222.0" promptText="Unit Price" />
       <TextField layoutX="325.0" layoutY="183.0" prefHeight="34.0" prefWidth="222.0" promptText="Qty On Hand" />
-      <Button layoutX="465.0" layoutY="254.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="82.0" style="-fx-background-color: #74b9ff;" text="Save">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
       <Button layoutX="369.0" layoutY="254.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="82.0" style="-fx-background-color: #ffeaa7;" text="Clear">
          <font>
             <Font name="System Bold" size="15.0" />
@@ -34,5 +29,22 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <JFXButton layoutX="14.0" layoutY="28.0" onAction="#btnBackOnAction" text="Back">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="464.0" layoutY="254.0" prefHeight="40.0" prefWidth="82.0" style="-fx-background-color: #74b9ff;" text="Save">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
    </children>
 </AnchorPane>
