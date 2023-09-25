@@ -14,7 +14,7 @@
             <Font name="System Bold" size="29.0" />
          </font>
       </Label>
-      <Button layoutX="49.0" layoutY="87.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="82.0" style="-fx-background-color: #55efc4;" text="Customer">
+      <Button layoutX="49.0" layoutY="87.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" prefHeight="40.0" prefWidth="82.0" style="-fx-background-color: #55efc4;" text="Customer">
          <font>
             <Font size="12.0" />
          </font>
@@ -22,7 +22,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="310.0" layoutY="87.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="82.0" style="-fx-background-color: #74b9ff;" text="Item">
+      <Button layoutX="310.0" layoutY="87.0" mnemonicParsing="false" onAction="#btnItemOnAction" prefHeight="40.0" prefWidth="82.0" style="-fx-background-color: #74b9ff;" text="Item">
          <font>
             <Font size="12.0" />
          </font>
